@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Alchemy</title>
+  <meta name="description" content="Home Alchemy: Transforming memories into timeless masterpieces. Sustainable furniture design with modern charm and vintage soul.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .font-serif { font-family: 'Merriweather', serif; }
+    .font-display { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; }
+  </style>
+  <!-- Typography CDN (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-beige text-olive-darker font-serif">
+  <script>
+    // Smooth scroll for internal links in browsers that don't support scroll-behavior
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('a[data-scroll]');
+      links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+        });
+      });
+    });
+  </script>
+  <style>
+    :root {
+      --beige: #f7f3e8;
+      --olive: #78816b;
+      --olive-light: #b2bda8;
+      --olive-darker: #464e3d;
+      --brown: #98785a;
+      --brown-light: #dacbb9;
+    }
+    .bg-beige { background-color: var(--beige); }
+    .text-olive { color: var(--olive); }
+    .text-olive-darker { color: var(--olive-darker); }
+    .bg-olive { background-color: var(--olive); }
+    .bg-olive-light { background-color: var(--olive-light); }
+    .bg-brown { background-color: var(--brown); }
+    .bg-brown-light { background-color: var(--brown-light); }
+    .border-brown { border-color: var(--brown); }
+    .border-olive { border-color: var(--olive); }
+  </style>
+  <!-- Hero Section -->
+  <section class="bg-beige min-h-screen pt-16 pb-10 flex flex-col justify-center items-center">
+    <div class="max-w-2xl text-center">
+      <h1 class="text-5xl md:text-6xl font-display font-bold text-olive mb-4 tracking-tight">Home Alchemy</h1>
+      <h2 class="text-xl md:text-2xl text-brown mb-2 font-serif italic">Transforming memories into timeless masterpieces</h2>
+      <p class="text-olive-darker mb-4 font-medium">By Khushi Agarwal and Devansh Nayak</p>
+      <a href="#about" data-scroll class="inline-block px-6 py-3 rounded-full bg-olive text-beige font-semibold shadow hover:bg-olive-light transition">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About / Introduction -->
+  <section id="about" class="py-14 px-4 md:px-0 max-w-3xl mx-auto">
+    <h3 class="text-3xl font-bold text-brown mb-6 font-display">About Home Alchemy</h3>
+    <div class="text-lg text-olive-darker mb-4">
+      <p>
+        At Home Alchemy, we believe in giving history a new home through creative sustainability in furniture design. Our process blends vintage soul and modern charm, breathing new life into forgotten pieces while honoring eco-conscious principles. Every creation seeks to tell a story, reinforce sustainability, and inspire a more beautiful, ethical tomorrow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="py-12 px-4 md:px-0 max-w-3xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-brown-light p-6 rounded-lg shadow border border-brown">
+        <h4 class="font-bold text-brown text-xl mb-2 font-display">Our Vision</h4>
+        <p class="text-olive-darker">To be the catalyst for sustainable transformation in Indian homes, blending timeless memories with contemporary design to create furniture with unique stories.</p>
+      </div>
+      <div class="bg-olive-light p-6 rounded-lg shadow border border-olive">
+        <h4 class="font-bold text-olive text-xl mb-2 font-display">Our Mission</h4>
+        <p class="text-olive-darker">To reimagine furniture recycling through artistry, upcycling vintage pieces and promoting artisanal craftsmanship, making green living accessible for all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Overview -->
+  <section class="py-12 px-4 md:px-0 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-display font-bold text-brown mb-4">Market Overview</h3>
+    <div class="bg-beige p-5 rounded shadow border border-olive flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-olive-darker text-lg font-medium">
+        The demand for eco-friendly furniture is on the rise—<span class="font-bold text-brown">53%</span> of Indian consumers now favor sustainable home options. Home Alchemy aligns with this trend, offering timeless designs that are kind to both people and the planet.
+      </p>
+      <div class="w-20 h-20 flex items-center justify-center bg-brown-light rounded-full text-3xl font-bold text-brown">
+        53%
+      </div>
+    </div>
+  </section>
+
+  <!-- Opportunities & Differentiation -->
+  <section class="py-12 px-4 md:px-0 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-bold font-display text-olive mb-4">Opportunities & Differentiation</h3>
+    <ul class="list-disc list-inside text-olive-darker space-y-2">
+      <li>Untapped market for refurbished and upcycled furniture in Bhubaneswar</li>
+      <li>Growing demand among eco-conscious millennials and families</li>
+      <li>Strong local artisan community</li>
+      <li>Unique blend of vintage and contemporary styles</li>
+      <li>Dedicated sourcing of historical furniture pieces</li>
+      <li>Transparent sustainability practices</li>
+    </ul>
+  </section>
+
+  <!-- SWOT Analysis -->
+  <section class="py-12 px-4 md:px-0 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold font-display text-brown mb-6">SWOT Analysis</h3>
+    <div class="grid grid-cols-2 grid-rows-2 gap-5">
+      <div class="bg-olive-light rounded-lg p-5 border border-olive">
+        <h4 class="font-bold text-olive mb-2 font-display">Strengths</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Innovative upcycling process</li>
+          <li>Artisanal partnerships</li>
+          <li>Strong brand identity</li>
+        </ul>
+      </div>
+      <div class="bg-brown-light rounded-lg p-5 border border-brown">
+        <h4 class="font-bold text-brown mb-2 font-display">Weaknesses</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Limited initial funding</li>
+          <li>Niche market awareness</li>
+        </ul>
+      </div>
+      <div class="bg-brown-light rounded-lg p-5 border border-brown">
+        <h4 class="font-bold text-brown mb-2 font-display">Opportunities</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Growing eco-category in Bhubaneswar</li>
+          <li>Expansion into regional markets</li>
+        </ul>
+      </div>
+      <div class="bg-olive-light rounded-lg p-5 border border-olive">
+        <h4 class="font-bold text-olive mb-2 font-display">Threats</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Competition from mass-market brands</li>
+          <li>Changing consumer spending</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitors Analysis -->
+  <section class="py-12 px-4 md:px-0 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-display font-bold text-brown mb-6">Competitors Analysis</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="font-bold text-olive mb-2 font-display">Direct Competitors</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Godrej Interio</li>
+          <li>Decobee</li>
+          <li>Local furniture shops</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-brown mb-2 font-display">Indirect Competitors</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Amazon</li>
+          <li>Flipkart</li>
+          <li>Handicraft stores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funding & Revenue -->
+  <section class="py-12 px-4 md:px-0 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-display font-bold text-olive mb-6">Funding & Revenue</h3>
+    <div class="grid md:grid-cols-5 gap-4 mb-8">
+      <div class="bg-olive-light rounded-lg p-4 text-center border border-olive font-semibold">Personal</div>
+      <div class="bg-brown-light rounded-lg p-4 text-center border border-brown font-semibold">MSME</div>
+      <div class="bg-olive-light rounded-lg p-4 text-center border border-olive font-semibold">VC</div>
+      <div class="bg-brown-light rounded-lg p-4 text-center border border-brown font-semibold">Crowdfunding</div>
+      <div class="bg-olive-light rounded-lg p-4 text-center border border-olive font-semibold">Government</div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="min-w-[260px] mx-auto bg-beige border border-olive rounded shadow">
+        <caption class="text-olive-darker font-semibold mb-2">Chair Cost Breakdown</caption>
+        <thead>
+          <tr>
+            <th class="px-3 py-2 text-left text-brown font-semibold">Item</th>
+            <th class="px-3 py-2 text-left text-brown font-semibold">Cost (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-brown-light">
+            <td class="px-3 py-2">Materials</td>
+            <td class="px-3 py-2">1200</td>
+          </tr>
+          <tr class="border-t border-brown-light">
+            <td class="px-3 py-2">Labor</td>
+            <td class="px-3 py-2">800</td>
+          </tr>
+          <tr class="border-t border-brown-light">
+            <td class="px-3 py-2">Finishing</td>
+            <td class="px-3 py-2">400</td>
+          </tr>
+          <tr class="border-t border-brown-light">
+            <td class="px-3 py-2 font-bold">Total</td>
+            <td class="px-3 py-2 font-bold">2400</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Target Audience & Partners -->
+  <section class="py-12 px-4 md:px-0 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-display font-bold text-brown mb-4">Target Audience & Partners</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <h4 class="font-bold text-olive mb-2 font-display">Consumer Segments</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Young professionals</li>
+          <li>Eco-conscious families</li>
+          <li>Art and design enthusiasts</li>
+          <li>Students and renters</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-brown mb-2 font-display">Partners</h4>
+        <ul class="text-olive-darker list-disc list-inside space-y-1">
+          <li>Artisans</li>
+          <li>Suppliers</li>
+          <li>Local agencies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="py-12 px-4 md:px-0 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-display font-bold text-olive mb-4">Conclusion</h3>
+    <p class="text-lg text-olive-darker font-medium">
+      Home Alchemy stands poised to redefine furniture in Bhubaneswar with an eco-friendly, artisanal approach. Our commitment to sustainability, creativity, and community partnerships enables us to deliver unique value and foster a greener, more beautiful future.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brown-light text-brown text-center py-8 mt-16 text-lg font-medium">
+    © 2025 Home Alchemy | Sustainable Furniture Design | Bhubaneswar
+  </footer>
+</body>
+</html>
